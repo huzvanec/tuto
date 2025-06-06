@@ -1,7 +1,7 @@
 # Modifying the APKs
-Decompile the APKs, modify them to accept user certificates, compile them again and sign them using a custom keystore.
-<br><br>
-This is a bad approach. Been there, tried it, not fun, did not work well. But here is some useful stuff to get you started:
+Decompile the APKs, modify them to accept user certificates, recompile them, and sign them with a custom keystore.
+
+This is a bad approach. I spent hours trying this method first-and it ultimately didn’t end up working. But here is some useful stuff to get you started:
 - If it's a `xapk`, rename it to zip and extract the apks from the inside.
 - Decompile using [apktool](https://apktool.org/) (`apktool d myapp.apk`)
 - If you need to read the code of the app, run [dex2jar](https://github.com/pxb1988/dex2jar) on the apk and then throw the output jar to some [java decompiler](http://www.javadecompilers.com/).
